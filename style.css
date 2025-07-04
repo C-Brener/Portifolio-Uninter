@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth; /* Animação suave ao clicar nos links internos */
+    /*Aque poderia colocar o font size padrao como 10px para facilitar a conversão d uso de rem, mas como vou utilizar valores simples não será necessario*/
 }
 
 body {
