@@ -1,0 +1,154 @@
+/* Importação de uma fonte do Google Fonts para melhorar a estética */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* --- Reset Básico e Estilos Globais --- */
+/* Isso garante um comportamento consistente entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* Animação suave ao clicar nos links internos */
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte principal do site */
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    color: #333; /* Cor principal do texto */
+    line-height: 1.6;
+}
+
+/* --- Estilos do Cabeçalho e Navegação --- */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed; /* Deixa o menu fixo no topo da página [cite: 15] */
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Garante que o cabeçalho fique sobre os outros elementos */
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Alinha os itens do menu horizontalmente */
+    justify-content: center; /* Centraliza o menu */
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Efeito suave na mudança de cor */
+}
+
+nav ul li a:hover {
+    color: #1a73e8; /* Cor de destaque ao passar o mouse */
+}
+
+/* --- Estilos do Conteúdo Principal e Seções --- */
+main {
+    padding-top: 80px; /* Adiciona espaço no topo para não ficar atrás do cabeçalho fixo */
+}
+
+section {
+    padding: 60px 20px; /* Espaçamento interno para cada seção */
+    max-width: 900px; /* Largura máxima para o conteúdo */
+    margin: 0 auto; /* Centraliza as seções na página */
+    border-bottom: 1px solid #ddd; /* Linha divisória entre as seções */
+}
+
+/* Estilo para a última seção não ter borda inferior */
+section:last-child {
+    border-bottom: none;
+}
+
+h1, h2 {
+    color: #1a73e8; /* Cor de destaque para os títulos principais */
+    margin-bottom: 20px;
+}
+
+/* --- Estilos específicos da Seção Portfólio --- */
+.portfolio-grid {
+    display: grid;
+    /* Cria 3 colunas de tamanho igual */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Espaço entre os itens do portfólio */
+}
+
+.portfolio-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave */
+    text-align: center;
+}
+
+.portfolio-item h4 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.portfolio-item a {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.portfolio-item a:hover {
+    background-color: #145ab8;
+}
+
+
+/* --- Estilos da Seção de Contato (Formulário) --- */
+/* Aplica estilo aos elementos do formulário [cite: 38] */
+form {
+    display: flex;
+    flex-direction: column; /* Organiza os campos em coluna */
+    gap: 15px; /* Espaço entre os elementos do formulário */
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* --- Estilos do Rodapé --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
